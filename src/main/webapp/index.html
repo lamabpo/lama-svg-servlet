@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>svg2png/Apache Batik Servlet test</title>
+  </head>
+  <body>
+    <div>SVG file-&gt;PNG</div>
+    <form method="POST" action="SVG2PNGServlet" enctype="multipart/form-data">
+        svg <input type="file" name="svg"><input type="hidden" name="test" value="true"><br/>
+      <input type="submit" value="Submit">
+    </form>
+    <div>HTTP POST-&gt;PNG</div>
+    <form method="POST" action="SVG2PNGServlet">
+      svg<input type="hidden" name="test" value="true"><br/>
+      <textarea name="svg" rows="10" cols="160"></textarea><br/>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>

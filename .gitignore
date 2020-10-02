@@ -1,0 +1,22 @@
+### Java ###
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# Eclipse Core
+.project
+
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
+
+#vscode
+.settings/
+.vscode/
+
+#LAMA BPO
+sandbox/
+
+target/
