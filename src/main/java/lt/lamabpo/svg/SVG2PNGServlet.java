@@ -48,7 +48,7 @@ import org.apache.commons.io.output.ByteArrayOutputStream;
  * @author Giedrius Deveikis @ LAMA BPO
  */
 @WebServlet(name = "SVG2PNGServlet", urlPatterns = { "/SVG2PNGServlet" })
-@MultipartConfig
+@MultipartConfig(fileSizeThreshold=1024*1024)
 public class SVG2PNGServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
     private String fontsDirectory;
